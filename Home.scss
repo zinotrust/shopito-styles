@@ -1,0 +1,27 @@
+.infoboxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  //   margin-right: 5px;
+}
+.infobox {
+  width: 23rem;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  //   margin-right: 2rem;
+  display: flex;
+  cursor: pointer;
+
+  .icon {
+    width: 35%;
+  }
+  .text {
+    h4 {
+      //   color: #aaa;
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+  }
+}
