@@ -1,0 +1,160 @@
+.contact-section {
+  width: 100%;
+  background-color: #222831;
+  //   background-color: var(--color-grey);
+  padding: 9rem 0;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150rem;
+  height: 100%;
+  background-image: url(../../assets/bg-boost-desktop.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 1;
+}
+.contact .i {
+  color: #fff;
+  font-size: 2.5rem;
+  border: 2px solid var(--color-danger);
+  padding: 1rem;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  border-radius: 50%;
+  margin: 2px;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.contact .i:hover {
+  transform: translateY(-1rem);
+  z-index: 1;
+}
+
+.contact h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+// Button
+.btn {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-white);
+  border: 2px solid var(--color-danger);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.btn-dark {
+  background-color: transparent;
+  overflow: hidden;
+  color: var(--color-white);
+}
+
+.btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 99.5%;
+  height: 100%;
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: all 0.4s;
+}
+
+.btn:hover::before {
+  /* background-color: var(--pink); */
+  transform: translateX(0);
+  color: var(--color-white);
+}
+
+// Footer section
+.footer-section {
+  padding: 5rem 0;
+  background-color: #222831;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  row-gap: 2rem;
+}
+
+.footer-logo {
+  width: 50%;
+  img {
+    width: 100%;
+  }
+}
+
+.link-heading {
+  color: #fff;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.link-heading:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-links li {
+  padding-bottom: 1rem;
+  text-decoration: none;
+
+  a {
+    color: #ccc;
+    font-size: 1.2rem;
+  }
+}
+
+// Media Query 600px
+@media screen and (max-width: 600px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact > * {
+    margin: 3rem 0;
+  }
+}

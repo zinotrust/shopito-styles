@@ -1,0 +1,34 @@
+.pageMenu {
+  color: #fff;
+  background: rgb(174, 49, 4);
+}
+
+.home-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+
+  & li a {
+    color: #fff;
+  }
+  & > * {
+    margin-left: 1rem;
+    color: #fff;
+  }
+}
+
+.activePage {
+  position: relative;
+  color: var(--color-danger);
+}
+
+.activePage::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
