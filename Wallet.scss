@@ -1,0 +1,21 @@
+.wallet {
+  .wallet-data {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .wallet-info {
+    width: 35%;
+    padding: 1rem;
+    border-color: var(--color-primary);
+  }
+  .wallet-promo {
+    width: 65%;
+    padding: 1rem;
+  }
+  .wallet-text {
+    width: 65%;
+  }
+  .wallet-img {
+    width: 35%;
+  }
+}

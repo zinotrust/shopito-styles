@@ -1,0 +1,20 @@
+.coupon-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  input {
+    width: 70%;
+    max-width: 70%;
+  }
+  button {
+    width: 25%;
+    height: 4.1rem;
+  }
+}
+
+.coupon-msg {
+  border: 1px solid var(--color-danger);
+  padding: 1rem;
+  margin-bottom: 3px;
+}
