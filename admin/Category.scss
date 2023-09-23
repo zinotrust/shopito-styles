@@ -1,0 +1,91 @@
+.coupon {
+  //   margin-bottom: 5rem;
+  .card {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+  }
+  form {
+    label {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--color-dark);
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="file"],
+    input[type="email"],
+    select,
+    input[type="password"] {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 300;
+      padding: 1rem;
+      margin: 1rem auto;
+      width: 100%;
+      border: 1px solid #777;
+      border-radius: 3px;
+      outline: none;
+    }
+  }
+}
+
+.table {
+  padding: 5px;
+  width: 100%;
+  overflow-x: auto;
+
+  .search {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1.4rem;
+
+    thead {
+      border-top: 2px solid var(--light-blue);
+      border-bottom: 2px solid var(--light-blue);
+    }
+
+    th {
+      border: 1px solid #eee;
+    }
+
+    th,
+    td {
+      vertical-align: top;
+      text-align: left;
+      padding: 8px;
+
+      &.icons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        > * {
+          margin-right: 7px;
+          cursor: pointer;
+          vertical-align: middle;
+          align-self: center;
+        }
+      }
+    }
+
+    tr {
+      border-bottom: 1px solid #ccc;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fff;
+    }
+    tbody {
+      tr:hover {
+        cursor: pointer;
+        background-color: rgba(31, 147, 255, 0.3);
+      }
+    }
+  }
+}
